@@ -9,6 +9,7 @@ import { Badge } from "@/components/ui/badge"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { ThemeProvider } from "@/components/theme-provider"
+import { Facebook, Instagram, Linkedin, PlusCircle } from "lucide-react"
 import {
   Moon,
   Sun,
@@ -58,6 +59,7 @@ function Header() {
     <header className="fixed top-0 w-full bg-white/80 dark:bg-gray-900/80 backdrop-blur-md z-50 border-b border-gray-200 dark:border-gray-800">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center space-x-2">
+          <Image src="/favicon.png" alt="Konveta" width={32} height={32} />
           <span className="text-2xl font-bold bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">
             Konveta
           </span>
@@ -92,9 +94,11 @@ function Header() {
 
         <div className="flex items-center space-x-4">
           <ThemeToggle />
+          <a href="http://wa.me/79991190534?text=Olá!%20Me%20chamo%20[SEU NOME],%20e%20gostaria%20de%20realizar%20um%20teste%20grátis.   " target="_blank">
           <Button className="hidden md:inline-flex bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600">
             Teste Grátis
           </Button>
+          </a>
           <Button variant="ghost" size="icon" className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
             {isMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </Button>
@@ -128,9 +132,11 @@ function Header() {
             <Link href="#contato" className="text-gray-700 dark:text-gray-300 hover:text-orange-500 transition-colors">
               Contato
             </Link>
+            <a href="http://wa.me/79991190534?text=Olá!%20Me%20chamo%20[SEU NOME],%20e%20gostaria%20de%20realizar%20um%20teste%20grátis.   " target="_blank">
             <Button className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600">
               Teste Grátis
             </Button>
+            </a>
           </nav>
         </div>
       )}
@@ -165,13 +171,15 @@ function HeroSection() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
+              <a href="http://wa.me/79991190534?text=Olá!%20Me%20chamo%20[SEU NOME],%20e%20gostaria%20de%20realizar%20um%20teste%20grátis.   " target="_blank">
               <Button
                 size="lg"
                 className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-lg px-8 py-6"
               >
                 Testar Grátis Agora
                 <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>              
+              </Button>
+              </a>              
             </div>
 
             <div className="flex items-center space-x-8 pt-8">
@@ -315,11 +323,12 @@ function AboutSection() {
 
 function IntegrationsSection() {
   const integrations = [
-    { name: "WhatsApp", description: "Conecte seus leads do WhatsApp automaticamente" },
-    { name: "Email Marketing", description: "Sincronize com suas campanhas de email" },
-    { name: "Facebook Ads", description: "Importe leads do Facebook diretamente" },
-    { name: "Instagram", description: "Gerencie leads do Instagram Business" },
-    { name: "Zapier", description: "Conecte com mais de 3000 aplicativos" },
+    { icon: <MessageSquare className="h-8 w-8 text-orange-500"/>, name: "WhatsApp", description: "Conecte seus leads do WhatsApp automaticamente" },
+    { icon: <Mail className="h-8 w-8 text-orange-500" />, name: "Email Marketing", description: "Sincronize com suas campanhas de email" },
+    { icon: <Facebook className="h-8 w-8 text-orange-500" />, name: "Facebook Ads", description: "Importe leads do Facebook diretamente" },
+    { icon: <Instagram className="h-8 w-8 text-orange-500" />, name: "Instagram", description: "Gerencie leads do Instagram Business" },
+    { icon: <MessageSquare className="h-8 w-8 text-orange-500" />, name: "Zapier", description: "Conecte com mais de 3000 aplicativos" },
+    { icon: <PlusCircle className="h-8 w-8 text-orange-500" />, name: "Entre outros", description: "Integrações personalizadas disponíveis" },
   ]
 
   return (
@@ -334,23 +343,21 @@ function IntegrationsSection() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-3 gap-8 mb-16">
           {integrations.map((integration, index) => (
             <Card
               key={index}
-              className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1 animate-fade-in-up"
-              style={{ animationDelay: `${index * 0.1}s` }}
+              className="text-center hover:shadow-lg transition-shadow duration-300 animate-fade-in-up"
+              style={{ animationDelay: `${index * 0.2}s` }}
             >
               <CardHeader>
-                <CardTitle className="flex items-center space-x-3">
-                  <div className="w-10 h-10 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg flex items-center justify-center">
-                    <MessageSquare className="h-5 w-5 text-white" />
-                  </div>
-                  <span>{integration.name}</span>
-                </CardTitle>
+                <div className="mx-auto mb-4 p-3 bg-orange-50 dark:bg-orange-900/20 rounded-full w-fit">
+                  {integration.icon}
+                </div>
+                <CardTitle className="text-xl">{integration.name}</CardTitle>
               </CardHeader>
               <CardContent>
-                <CardDescription>{integration.description}</CardDescription>
+                <CardDescription className="text-base">{integration.description}</CardDescription>
               </CardContent>
             </Card>
           ))}
@@ -449,6 +456,7 @@ function PricingSection() {
                     </li>
                   ))}
                 </ul>
+                <a href="http://wa.me/79991190534?text=Olá!%20Me%20chamo%20[SEU NOME],%20e%20gostaria%20de%20realizar%20um%20teste%20grátis.   " target="_blank">
                 <Button
                   className={`w-full ${
                     plan.popular
@@ -459,6 +467,7 @@ function PricingSection() {
                 >
                   Começar Teste Grátis
                 </Button>
+                </a>
               </CardContent>
             </Card>
           ))}
@@ -619,9 +628,11 @@ function ContactSection() {
               <p className="text-gray-600 dark:text-gray-400 mb-4">
                 Sem cartão de crédito. Sem compromisso. Cancele quando quiser.
               </p>
+              <a href="http://wa.me/79991190534?text=Olá!%20Me%20chamo%20[SEU NOME],%20e%20gostaria%20de%20realizar%20um%20teste%20grátis.   " target="_blank">
               <Button className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600">
                 Começar Agora
               </Button>
+              </a>
             </div>
           </div>
 
@@ -676,6 +687,16 @@ function Footer() {
               </span>
             </div>
             <p className="text-gray-400">O CRM mais simples e eficiente para micro e pequenos empreendedores.</p>
+            <div className="flex space-x-4">
+                <Link href="https://instagram.com/konvertacrm" target="_blank" className="text-gray-400 hover:text-orange-500 transition-colors">
+                  <Instagram className="h-5 w-5" />
+                  <span className="sr-only">Instagram</span>
+                </Link>
+                <Link href="https://www.linkedin.com/company/konvertacrm" target="_blank" className="text-gray-400 hover:text-orange-500 transition-colors">
+                  <Linkedin className="h-5 w-5" />
+                  <span className="sr-only">LinkedIn</span>
+                </Link>
+            </div>
           </div>
 
           <div>
@@ -719,7 +740,7 @@ function Footer() {
             <h4 className="font-semibold mb-4">Suporte</h4>
             <ul className="space-y-2 text-gray-400">
               <li>
-                <Link href="#" className="hover:text-orange-500 transition-colors">
+                <Link href="/ajuda" className="hover:text-orange-500 transition-colors">
                   Central de Ajuda
                 </Link>
               </li>
