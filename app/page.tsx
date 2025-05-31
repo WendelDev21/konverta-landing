@@ -94,7 +94,7 @@ function Header() {
 
         <div className="flex items-center space-x-4">
           <ThemeToggle />
-          <a href="http://wa.me/79991190534?text=Olá!%20Me%20chamo%20[SEU NOME],%20e%20gostaria%20de%20realizar%20um%20teste%20grátis.   " target="_blank">
+          <a href="http://wa.me/5579991190534?text=Olá!%20Me%20chamo%20[SEU NOME],%20e%20gostaria%20de%20realizar%20um%20teste%20grátis.   " target="_blank">
           <Button className="hidden md:inline-flex bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600">
             Teste Grátis
           </Button>
@@ -132,7 +132,7 @@ function Header() {
             <Link href="#contato" className="text-gray-700 dark:text-gray-300 hover:text-orange-500 transition-colors">
               Contato
             </Link>
-            <a href="http://wa.me/79991190534?text=Olá!%20Me%20chamo%20[SEU NOME],%20e%20gostaria%20de%20realizar%20um%20teste%20grátis.   " target="_blank">
+            <a href="http://wa.me/5579991190534?text=Olá!%20Me%20chamo%20[SEU NOME],%20e%20gostaria%20de%20realizar%20um%20teste%20grátis.   " target="_blank">
             <Button className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600">
               Teste Grátis
             </Button>
@@ -171,7 +171,7 @@ function HeroSection() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href="http://wa.me/79991190534?text=Olá!%20Me%20chamo%20[SEU NOME],%20e%20gostaria%20de%20realizar%20um%20teste%20grátis.   " target="_blank">
+              <a href="http://wa.me/5579991190534?text=Olá!%20Me%20chamo%20[SEU NOME],%20e%20gostaria%20de%20realizar%20um%20teste%20grátis.   " target="_blank">
               <Button
                 size="lg"
                 className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-lg px-8 py-6"
@@ -456,7 +456,7 @@ function PricingSection() {
                     </li>
                   ))}
                 </ul>
-                <a href="http://wa.me/79991190534?text=Olá!%20Me%20chamo%20[SEU NOME],%20e%20gostaria%20de%20realizar%20um%20teste%20grátis.   " target="_blank">
+                <a href="http://wa.me/5579991190534?text=Olá!%20Me%20chamo%20[SEU NOME],%20e%20gostaria%20de%20realizar%20um%20teste%20grátis.   " target="_blank">
                 <Button
                   className={`w-full ${
                     plan.popular
@@ -628,7 +628,7 @@ function ContactSection() {
               <p className="text-gray-600 dark:text-gray-400 mb-4">
                 Sem cartão de crédito. Sem compromisso. Cancele quando quiser.
               </p>
-              <a href="http://wa.me/79991190534?text=Olá!%20Me%20chamo%20[SEU NOME],%20e%20gostaria%20de%20realizar%20um%20teste%20grátis.   " target="_blank">
+              <a href="http://wa.me/5579991190534?text=Olá!%20Me%20chamo%20[SEU NOME],%20e%20gostaria%20de%20realizar%20um%20teste%20grátis.   " target="_blank">
               <Button className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600">
                 Começar Agora
               </Button>

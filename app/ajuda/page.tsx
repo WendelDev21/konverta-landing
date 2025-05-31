@@ -237,7 +237,7 @@ function ContactSection() {
       description: "Ligue para nosso suporte",
       action: "Entre em contato",
       available: "Seg-Sex, 8h-18h",
-      link: "https://wa.me/5579991190534?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20o%20suporte.",
+      link: "https://wa.me/555579991190534?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20o%20suporte.",
     },
   ]
 
