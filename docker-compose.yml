@@ -3,7 +3,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: konveta-landing
+    container_name: konverta-landing
     restart: unless-stopped
     ports:
       - "3001:3000"  # Porta externa 3001 → interna 3000

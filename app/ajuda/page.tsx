@@ -42,9 +42,9 @@ function Header() {
     <header className="fixed top-0 w-full bg-white/80 dark:bg-gray-900/80 backdrop-blur-md z-50 border-b border-gray-200 dark:border-gray-800">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center space-x-2">
-          <Image src="/favicon.png" alt="Konveta" width={32} height={32} />
+          <Image src="/favicon.png" alt="konverta" width={32} height={32} />
           <span className="text-2xl font-bold bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">
-            Konveta
+            konverta
           </span>
         </div>
 
@@ -152,7 +152,7 @@ function HeroSection() {
 function FAQSection() {
   const faqs = [
     {
-      question: "Como faço para começar a usar a Konveta?",
+      question: "Como faço para começar a usar a konverta?",
       answer:
         "É muito simples! Primeiro, entre em contato com a nossa equipe. Depois, escolha o plano de sua preferência e realize o pagamento. Pronto! Você já pode começar a gerenciar seus primeiros leads e configurar suas primeiras automações.",
     },
@@ -172,24 +172,24 @@ function FAQSection() {
         "Claro! Você pode cancelar sua assinatura a qualquer momento entrando em contato com a nossa equipe. Não há taxas de cancelamento ou multas. Seus dados ficam seguros por 30 dias após o cancelamento.",
     },
     {
-      question: "A Konveta oferece suporte técnico?",
+      question: "A konverta oferece suporte técnico?",
       answer:
         "Sim! Oferecemos suporte via chat, email e telefone. Nosso time está disponível de segunda a sexta, das 9h às 18h. Clientes dos planos Pro e Business têm suporte prioritário.",
     },
     {
-      question: "Meus dados estão seguros na Konveta?",
+      question: "Meus dados estão seguros na konverta?",
       answer:
         "Absolutamente! Utilizamos criptografia de nível bancário, backups automáticos diários e seguimos as melhores práticas de segurança. Somos compatíveis com a LGPD e levamos a privacidade dos seus dados muito a sério.",
     },
     {
-      question: "Posso usar a Konveta no celular?",
+      question: "Posso usar a konverta no celular?",
       answer:
         "Sim! Nossa plataforma é totalmente responsiva e funciona perfeitamente em smartphones e tablets. Em breve também lançaremos nossos aplicativos nativos para iOS e Android.",
     },
     {
       question: "Como funciona a integração com WhatsApp?",
       answer:
-        "Nossa integração com WhatsApp permite que você receba leads automaticamente na Konveta quando alguém entra em contato pelo WhatsApp Business.",
+        "Nossa integração com WhatsApp permite que você receba leads automaticamente na konverta quando alguém entra em contato pelo WhatsApp Business.",
     },
   ]
 
@@ -200,7 +200,7 @@ function FAQSection() {
           <Badge className="mb-4 bg-gradient-to-r from-orange-500 to-red-500 text-white">FAQ</Badge>
           <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">Perguntas frequentes</h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Encontre respostas para as dúvidas mais comuns sobre a Konveta
+            Encontre respostas para as dúvidas mais comuns sobre a konverta
           </p>
         </div>
 
@@ -285,9 +285,9 @@ function Footer() {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <Image src="/favicon.png" alt="Konveta" width={32} height={32} />
+              <Image src="/favicon.png" alt="konverta" width={32} height={32} />
               <span className="text-xl font-bold bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">
-                Konveta
+                konverta
               </span>
             </div>
             <p className="text-gray-400">O CRM mais simples e eficiente para micro e pequenos empreendedores.</p>
@@ -353,7 +353,7 @@ function Footer() {
         </div>
 
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-400 text-sm">© 2025 Konveta. Todos os direitos reservados.</p>
+          <p className="text-gray-400 text-sm">© 2025 konverta. Todos os direitos reservados.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <Link href="#" className="text-gray-400 hover:text-orange-500 transition-colors text-sm">
               Privacidade

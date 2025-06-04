@@ -59,9 +59,9 @@ function Header() {
     <header className="fixed top-0 w-full bg-white/80 dark:bg-gray-900/80 backdrop-blur-md z-50 border-b border-gray-200 dark:border-gray-800">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center space-x-2">
-          <Image src="/favicon.png" alt="Konveta" width={32} height={32} />
+          <Image src="/favicon.png" alt="Konverta" width={32} height={32} />
           <span className="text-2xl font-bold bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">
-            Konveta
+            konverta
           </span>
         </div>
 
@@ -162,7 +162,7 @@ function HeroSection() {
                 <span className="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">
                   leads em vendas
                 </span>{" "}
-                com a Konveta
+                com a konverta
               </h1>
               <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
                 O CRM mais simples e eficiente para micro e pequenos empreendedores. Gerencie seus leads, acompanhe
@@ -250,10 +250,10 @@ function AboutSection() {
     <section id="sobre" className="py-20 bg-white dark:bg-gray-900">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in-up">
-          <Badge className="mb-4 bg-gradient-to-r from-orange-500 to-red-500 text-white">Sobre a Konveta</Badge>
+          <Badge className="mb-4 bg-gradient-to-r from-orange-500 to-red-500 text-white">Sobre a konverta</Badge>
           <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">O CRM que entende seu negócio</h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Criamos a Konveta pensando nos desafios únicos dos micro e pequenos empreendedores. Uma ferramenta poderosa,
+            Criamos a konverta pensando nos desafios únicos dos micro e pequenos empreendedores. Uma ferramenta poderosa,
             mas simples o suficiente para usar no dia a dia.
           </p>
         </div>
@@ -280,7 +280,7 @@ function AboutSection() {
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 animate-fade-in-left">
-            <h3 className="text-3xl font-bold text-gray-900 dark:text-white">Por que escolher a Konveta?</h3>
+            <h3 className="text-3xl font-bold text-gray-900 dark:text-white">Por que escolher a konverta?</h3>
             <div className="space-y-4">
               {[
                 "Configuração em menos de 5 minutos",
@@ -307,7 +307,7 @@ function AboutSection() {
               <div className="text-center space-y-4">
                 <Users className="h-16 w-16 text-orange-500 mx-auto" />
                 <h4 className="text-2xl font-bold text-gray-900 dark:text-white">
-                  Mais de 100 empresas confiam na Konveta
+                  Mais de 100 empresas confiam na konverta
                 </h4>
                 <p className="text-gray-600 dark:text-gray-300">
                   Desde freelancers até pequenas empresas com 50+ funcionários
@@ -338,7 +338,7 @@ function IntegrationsSection() {
           <Badge className="mb-4 bg-gradient-to-r from-orange-500 to-red-500 text-white">Integrações</Badge>
           <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">Conecte todas suas fontes de leads</h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Centralize todos os seus leads em um só lugar. A Konveta se integra com as principais plataformas que você
+            Centralize todos os seus leads em um só lugar. A konverta se integra com as principais plataformas que você
             já usa.
           </p>
         </div>
@@ -493,7 +493,7 @@ function TestimonialsSection() {
       role: "Consultora de Marketing",
       company: "MS Consultoria",
       content:
-        "A Konveta transformou minha forma de trabalhar. Antes eu perdia leads por falta de organização, agora tenho tudo centralizado e minha taxa de conversão aumentou 40%!",
+        "A konverta transformou minha forma de trabalhar. Antes eu perdia leads por falta de organização, agora tenho tudo centralizado e minha taxa de conversão aumentou 40%!",
       rating: 5,
     },
     {
@@ -509,7 +509,7 @@ function TestimonialsSection() {
       role: "Freelancer",
       company: "Design & Criação",
       content:
-        "Como freelancer, preciso de algo simples mas eficiente. A Konveta é perfeita! Consigo acompanhar todos meus projetos e clientes sem complicação.",
+        "Como freelancer, preciso de algo simples mas eficiente. A konverta é perfeita! Consigo acompanhar todos meus projetos e clientes sem complicação.",
       rating: 5,
     },
   ]
@@ -521,7 +521,7 @@ function TestimonialsSection() {
           <Badge className="mb-4 bg-gradient-to-r from-orange-500 to-red-500 text-white">Depoimentos</Badge>
           <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">O que nossos clientes dizem</h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Mais de 100 empresas já transformaram seus resultados com a Konveta. Veja alguns depoimentos reais de quem
+            Mais de 100 empresas já transformaram seus resultados com a konverta. Veja alguns depoimentos reais de quem
             usa nossa plataforma.
           </p>
         </div>
@@ -581,7 +581,7 @@ function ContactSection() {
           <Badge className="mb-4 bg-gradient-to-r from-orange-500 to-red-500 text-white">Fale Conosco</Badge>
           <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">Pronto para começar?</h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Entre em contato conosco e descubra como a Konveta pode transformar seu gerenciamento de leads e aumentar
+            Entre em contato conosco e descubra como a konverta pode transformar seu gerenciamento de leads e aumentar
             suas vendas.
           </p>
         </div>
@@ -597,7 +597,7 @@ function ContactSection() {
                   </div>
                   <div>
                     <div className="font-semibold text-gray-900 dark:text-white">Email</div>
-                    <div className="text-gray-600 dark:text-gray-400">konvetacrm@gmail.com</div>
+                    <div className="text-gray-600 dark:text-gray-400">konvertacrm@gmail.com</div>
                   </div>
                 </div>
 
@@ -681,9 +681,9 @@ function Footer() {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <Image src="/favicon.png" alt="Konveta" width={32} height={32} />
+              <Image src="/favicon.png" alt="konverta" width={32} height={32} />
               <span className="text-xl font-bold bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">
-                Konveta
+                konverta
               </span>
             </div>
             <p className="text-gray-400">O CRM mais simples e eficiente para micro e pequenos empreendedores.</p>
@@ -749,7 +749,7 @@ function Footer() {
         </div>
 
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-400 text-sm">© 2025 Konveta. Todos os direitos reservados.</p>
+          <p className="text-gray-400 text-sm">© 2025 konverta. Todos os direitos reservados.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <Link href="#" className="text-gray-400 hover:text-orange-500 transition-colors text-sm">
               Privacidade
