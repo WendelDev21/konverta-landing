@@ -641,32 +641,45 @@ function ContactSection() {
               <CardTitle>Envie uma mensagem</CardTitle>
               <CardDescription>Preencha o formulário e entraremos em contato em até 24 horas.</CardDescription>
             </CardHeader>
-            <CardContent className="space-y-4">
-              <div className="grid grid-cols-2 gap-4">
-                <div className="space-y-2">
-                  <label className="text-sm font-medium text-gray-700 dark:text-gray-300">Nome</label>
-                  <Input placeholder="Seu nome" />
+            <form
+              action="https://formsubmit.co/konvertacrm@gmail.com"
+              method="POST"
+            >
+              <CardContent className="space-y-4">
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="space-y-2">
+                    <label className="text-sm font-medium text-gray-700 dark:text-gray-300">Nome</label>
+                    <Input name="nome" placeholder="Seu nome" required />
+                  </div>
+                  <div className="space-y-2">
+                    <label className="text-sm font-medium text-gray-700 dark:text-gray-300">Email</label>
+                    <Input name="email" type="email" placeholder="seu@email.com" required />
+                  </div>
                 </div>
+
                 <div className="space-y-2">
-                  <label className="text-sm font-medium text-gray-700 dark:text-gray-300">Email</label>
-                  <Input type="email" placeholder="seu@email.com" />
+                  <label className="text-sm font-medium text-gray-700 dark:text-gray-300">Empresa</label>
+                  <Input name="empresa" placeholder="Nome da sua empresa" />
                 </div>
-              </div>
 
-              <div className="space-y-2">
-                <label className="text-sm font-medium text-gray-700 dark:text-gray-300">Empresa</label>
-                <Input placeholder="Nome da sua empresa" />
-              </div>
+                <div className="space-y-2">
+                  <label className="text-sm font-medium text-gray-700 dark:text-gray-300">Mensagem</label>
+                  <Textarea name="mensagem" placeholder="Como podemos ajudar você?" className="min-h-[120px]" required />
+                </div>
 
-              <div className="space-y-2">
-                <label className="text-sm font-medium text-gray-700 dark:text-gray-300">Mensagem</label>
-                <Textarea placeholder="Como podemos ajudar você?" className="min-h-[120px]" />
-              </div>
+                {/* Proteções extras */}
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_next" value="https://site.konvertaleads.com.br" />
 
-              <Button className="w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600">
-                Enviar Mensagem
-              </Button>
-            </CardContent>
+                <Button
+                  type="submit"
+                  className="w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600"
+                >
+                  Enviar Mensagem
+                </Button>
+              </CardContent>
+            </form>
+
           </Card>
         </div>
       </div>
