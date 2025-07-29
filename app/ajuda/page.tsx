@@ -229,7 +229,7 @@ function ContactSection() {
       description: "Envie sua dúvida por email",
       action: "Enviar Email",
       available: "Resposta em até 1h",
-      link: "mailto:konvertacrm@gmail.com",
+      link: "https://mail.google.com/mail/?view=cm&fs=1&to=konvertacrm@gmail.com",
     },
     {
       icon: <Phone className="h-8 w-8 text-orange-500" />,
@@ -264,10 +264,14 @@ function ContactSection() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="text-sm text-green-600 dark:text-green-400 font-medium">{option.available}</div>
-                <a href={option.link} target="_blank" rel="noopener noreferrer">
-                <Button className="w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600">
-                  {option.action}
-                </Button>
+                <a
+                  href={option.link}
+                  target={option.link.startsWith("mailto:") ? undefined : "_blank"}
+                  rel="noopener noreferrer"
+                >
+                  <Button className="w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600">
+                    {option.action}
+                  </Button>
                 </a>
               </CardContent>
             </Card>

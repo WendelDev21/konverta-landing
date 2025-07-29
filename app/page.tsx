@@ -375,7 +375,7 @@ function PricingSection() {
       period: "/mês",
       description: "Ideal para pequenos negócios",
       features: [
-        "Até 100 leads", 
+        "Até 100 Contatos", 
         "Até 1 webhook", 
         "Kanban board",
         "Painel Financeiro",
@@ -389,13 +389,14 @@ function PricingSection() {
       period: "/mês",
       description: "Ideal para empresas em crescimento",
       features: [
-        "Contatos ilimitados",
+        "Até 500 Contatos",
         "Até 5 webhooks",
         "Kanban board",
         "Painel Financeiro",
         "Relatórios Personalizados",
         "Suporte prioritário",
         "API de integração",
+        "1 Integração Gratuita",
       ],
       popular: true,
     },
@@ -410,6 +411,7 @@ function PricingSection() {
         "Kanban board",
         "Painel Financeiro",
         "Relatórios Personalizados",
+        "Disparador de Mensagens",
         "Suporte 24/7",
         "API de integração",
         "Integrações gratuitas",
@@ -623,7 +625,7 @@ function ContactSection() {
                   </div>
                   <div>
                     <div className="font-semibold text-gray-900 dark:text-white">Endereço</div>
-                    <div className="text-gray-600 dark:text-gray-400">Nossa Senhora do Socorro, SE - Brasil</div>
+                    <div className="text-gray-600 dark:text-gray-400">Aracaju, SE - Brasil</div>
                   </div>
                 </div>
               </div>
